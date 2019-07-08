@@ -166,7 +166,7 @@ function callmenu($pg_key){
 	}
 }
 
-function menuSidebar(){
+function menuSidebar($pg_key){
 	$s_menus = array(
 		'vitiligo-surgery-in-chennai'		=> 'Vitiligo Surgery',
 		'micropigmentation-for-vitiligo-in-chennai'		=> 'Micropigmentation for Vitiligo',
