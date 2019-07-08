@@ -15,13 +15,12 @@
         <h2>Contact Us</h2>
 
         <div class="widget-content">
-            <form>
-                <input type="text" placeholder="Your Name..." />
-                <input type="text" placeholder="Your Email ...." />
-                <input type="text" placeholder="Your Phone..." />
-                <input type="text" placeholder="Email Subject ...." />
-                <textarea placeholder="Your Message..." rows="2"></textarea>
-                <input type="submit" class="button primary last-item" />
+            <form action="includes/mail.php" method="POST">                
+                <input type="text" name="name" value="" placeholder="Full Name">                   
+                <input type="email" name="email" value="" placeholder="Email Address">
+                <input type="text" name="phone" value="" placeholder="Phone Number">                                
+                <textarea name="message" id="Reason" class="form-control" rows="3" placeholder="Your Message here ..." required></textarea>              									
+                <input type="submit" class="button secondary button-second" value="Send Message">
             </form>
         </div>
         <div class="clearfix"></div>

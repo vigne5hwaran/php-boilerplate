@@ -402,12 +402,12 @@
                 	<div class="form">
                     	<h2>Contact Us</h2>
                         <p>Want to book an appointment with us? Fill up the form below to get appointment.</p>
-                    	<form>                
-                            <input type="text" value="" placeholder="Full Name">                   
-                            <input type="email" value="" placeholder="Email Address">
-                            <input type="text" value="" placeholder="Phone Number">                                
-                            <textarea id="Reason" class="form-control" rows="3" placeholder="Your Message here ..." required></textarea>              									
-                            <a class="button secondary button-second">Send Message</a>
+                    	<form action="includes/mail.php" method="POST">                
+                            <input type="text" name="name" value="" placeholder="Full Name">                   
+                            <input type="email" name="email" value="" placeholder="Email Address">
+                            <input type="text" name="phone" value="" placeholder="Phone Number">                                
+                            <textarea name="message" id="Reason" class="form-control" rows="3" placeholder="Your Message here ..." required></textarea>              									
+                            <input type="submit" class="button secondary button-second" value="Send Message">
                         </form>
                     </div><!-- Form/-->
                     <div class="clearfix"></div>
@@ -428,7 +428,7 @@
                             <img src="assets/images/help/icons/ribbon.png" alt="Ribbon"/>
                             <h2>Its For your Great Skin!</h2>
                             <p>Crown quis lectus et mauris commodo blandit. Morbi rutrum libero eget nibh facilisis sollicitudin.</p>
-                            <a class="button button-second secondary">fix an appointment</a>
+                            <a href="contact.html" class="button button-second secondary">fix an appointment</a>
                         </div><!-- Form/-->
                     </div><!-- cell /-->
                 	
