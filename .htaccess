@@ -1,0 +1,15 @@
+<IfModule mod_rewrite.c>
+# For security reasons, Option followsymlinks cannot be overridden.
+#	Options +FollowSymLinks 
+	Options +SymLinksIfOwnerMatch
+	RewriteEngine On
+	#Options -MultiViews
+	# CheckSpelling off
+	RewriteBase /derm/
+	
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	
+	RewriteRule ^(.*)$ index.php/?name=$1 [NC]
+	
+</IfModule>
