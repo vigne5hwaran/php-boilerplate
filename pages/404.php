@@ -2,7 +2,7 @@
 $uri = $_SERVER['REQUEST_URI'];
 $uri = explode('/',$uri);
 $uri = end($uri);
-echo $pg_slug.'<br>'.$uri;
+// echo $pg_slug.'<br>'.$uri;
 
 ?>
 
