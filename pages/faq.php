@@ -2,8 +2,8 @@
         <div class="why-chose-us module">
         	
             <div class="section-title">
-                <h2>Awesome Facts</h2>
-                <p>why we are best in industry</p>
+                <h2>Awesome FAQ</h2>
+                <p>Frequently Asked Questions of Vitiligo</p>
             </div><!-- Section Title /-->
             
             <div class="grid-container grid-x grid-padding-x">
@@ -11,27 +11,29 @@
             	<div class="large-5 medium-12 small-12 cell">
                 	<ul class="accordion" data-accordion data-deep-link="true" data-update-history="true" data-deep-link-smudge="500" id="deeplinked-accordion">
                     	<li class="accordion-item is-active" data-accordion-item>
-                            <a href="#" class="accordion-title">What makes us the best dermatologist in town?</a>
+                            <a href="#" class="accordion-title">WHAT TYPE OF PATCHES CAN BE TREATED ?</a>
                             <div class="accordion-content" data-tab-content id="deeplink1">
-                             Phasellus quis ex nec ex molestie tincidunt. Vimus cursus metus ac lacus comdsmo venenatis. The Aenean pulvinar ornare justo, eu efficitur leo  dinga mushi.
+                            Only stable vitiligo patches – patches that have stopped spreading can be treated.
                             </div>
                         </li>
                         <li class="accordion-item" data-accordion-item>
-                            <a href="#" class="accordion-title">What makes us the best dermatologist in town?</a>
+                            <a href="#" class="accordion-title">HOW LONG DOES THE TREATMENT TAKE ?</a>
                             <div class="accordion-content" data-tab-content id="deeplink2">
-                             Phasellus quis ex nec ex molestie tincidunt. Vimus cursus metus ac lacus comdsmo venenatis. The Aenean pulvinar ornare justo, eu efficitur leo  dinga mushi.
+                            It takes around 2-3 hours for the procedure to be performed.
                             </div>
                         </li>
                         <li class="accordion-item" data-accordion-item>
-                            <a href="#" class="accordion-title">What makes us the best dermatologist in town?</a>
+                            <a href="#" class="accordion-title">IS THE PIGMENTATION ON THE PATCH PERMANENT ?</a>
                             <div class="accordion-content" data-tab-content id="deeplink3">
-                             Phasellus quis ex nec ex molestie tincidunt. Vimus cursus metus ac lacus comdsmo venenatis. The Aenean pulvinar ornare justo, eu efficitur leo  dinga mushi.
+                            Yes, in the absence of activation of the disease,96% of patients treated have not lost the pigmentation.
                             </div>
                         </li>
                         <li class="accordion-item" data-accordion-item>
-                            <a href="#" class="accordion-title">What makes us the best dermatologist in town?</a>
+                            <a href="#" class="accordion-title">IS IT A PLASTIC SURGERY ?</a>
                             <div class="accordion-content" data-tab-content id="deeplink4">
-                             Phasellus quis ex nec ex molestie tincidunt. Vimus cursus metus ac lacus comdsmo venenatis. The Aenean pulvinar ornare justo, eu efficitur leo  dinga mushi.
+                            It is not a plastic surgery, or cosmetic surgery, as the procedure involves transplantation of Melanocytes, 
+                            which is not done by plastic surgeons and this procedure is now considered as a treatment modality for vitiligo and 
+                            thus it also cannot be considered as cosmetic surgery.
                             </div>
                         </li>
                     </ul><!-- Cccordion /-->
