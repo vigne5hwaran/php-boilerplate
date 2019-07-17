@@ -1,11 +1,11 @@
 <?php
-require("../vendor/phpmailer/phpmailer/src/PHPMailer.php");
-require("../vendor/phpmailer/phpmailer/src/SMTP.php");
+require("vendor/phpmailer/phpmailer/src/PHPMailer.php");
+require("vendor/phpmailer/phpmailer/src/SMTP.php");
 if(isset($_POST['submit'])){
     $mail = new PHPMailer\PHPMailer\PHPMailer();
     
     //From email address and name
-    $mail->From = "info@chennaidermatologist.com";
+    $mail->From = "info@chennaidermatologist.in";
     $mail->FromName = "ChennaiDermatologist";
     
     //To address and name

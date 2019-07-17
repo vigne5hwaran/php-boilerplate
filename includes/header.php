@@ -26,6 +26,14 @@ $asset_path = $base_url.'assets/';
     
     <!-- Theme Styles CSS File -->
     <link rel="stylesheet" type="text/css" href="style.css" media="all" />
+    <style>
+        .mb-0 {
+        margin-bottom: 0;
+        }
+        .color-red {
+            color: #d12f0a;
+        }
+    </style>
 </head>
 
 <body>
@@ -94,7 +102,7 @@ $asset_path = $base_url.'assets/';
         </div>
         <!-- navigation CSS Ends /-->
         <?php
-        if($pg_key != 'home' && $pg_slug !== 'home.php') {
+        if($pg_key !== 'home' && $pg_slug !== 'home.php') {
             echo '<div class="title-section dark-bg module">
 
                     <div class="grid-container grid-x grid-padding-x">

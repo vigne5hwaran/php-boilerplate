@@ -1,4 +1,9 @@
- 
+<style>
+.w90 {
+    width: 90%;
+    margin: 0 auto;
+}
+</style>
         <div class="banner-container">
         	<div class="main-banner">
                 
@@ -14,7 +19,7 @@
                 </div><!-- Slide /-->
                 
                 <div class="slide transparent-background slide-two">
-                    <img src="assets/images/help/slide2.jpg" alt="banner"/>
+                    <img src="assets/images/help/banner-1.jpg" alt="banner"/>
                     <div class="slide-text">
                     	<h2>Meet Dr.A.M.Jaya Raman</h2>
                         <h3>A.N Skin & Hair clinic</h3>
@@ -86,7 +91,7 @@
             	
                 <div class="small-12 medium-12 large-6 cell">
                 	<div class="about-img">
-                    	<img src="assets/images/help/doctor-image-1.png" alt="About-img" />
+                    	<img class="w90" src="assets/images/help/dc1.png" alt="About-img" />
                         <p>‘‘We trust that helping other’s can bring more happiness to our own life. We are available.’’</p>
                     </div>
                 </div><!-- Cell /-->
@@ -121,7 +126,7 @@
                         <div class="about-info-box">
                         	<i class="fas fa-check"></i>
                             <div class="about-info-text">
-                                <h4>30 Years Experienced</h4>
+                                <h4>30+ Years of Experience</h4>
                                 <!-- <p>Once upon a time there was a thirsty crow he flew here and there in search of water but he could not find water</p> -->
                             </div>
                         </div>
@@ -306,58 +311,6 @@
         </div>
         <!-- Achievement Counter /-->
         
-        <div class="why-chose-us module">
-        	
-            <div class="section-title">
-                <h2>Awesome Facts</h2>
-                <p>why we are best in industry</p>
-            </div><!-- Section Title /-->
-            
-            <div class="grid-container grid-x grid-padding-x">
-            	
-            	<div class="large-5 medium-12 small-12 cell">
-                	<ul class="accordion" data-accordion data-deep-link="true" data-update-history="true" data-deep-link-smudge="500" id="deeplinked-accordion">
-                    	<li class="accordion-item" data-accordion-item>
-                            <a href="#" class="accordion-title">What makes us the best dermatologist in town?</a>
-                            <div class="accordion-content" data-tab-content id="deeplink1">
-                             Phasellus quis ex nec ex molestie tincidunt. Vimus cursus metus ac lacus comdsmo venenatis. The Aenean pulvinar ornare justo, eu efficitur leo  dinga mushi.
-                            </div>
-                        </li>
-                        <li class="accordion-item" data-accordion-item>
-                            <a href="#" class="accordion-title">What makes us the best dermatologist in town?</a>
-                            <div class="accordion-content" data-tab-content id="deeplink2">
-                             Phasellus quis ex nec ex molestie tincidunt. Vimus cursus metus ac lacus comdsmo venenatis. The Aenean pulvinar ornare justo, eu efficitur leo  dinga mushi.
-                            </div>
-                        </li>
-                        <li class="accordion-item" data-accordion-item>
-                            <a href="#" class="accordion-title">What makes us the best dermatologist in town?</a>
-                            <div class="accordion-content" data-tab-content id="deeplink3">
-                             Phasellus quis ex nec ex molestie tincidunt. Vimus cursus metus ac lacus comdsmo venenatis. The Aenean pulvinar ornare justo, eu efficitur leo  dinga mushi.
-                            </div>
-                        </li>
-                        <li class="accordion-item is-active" data-accordion-item>
-                            <a href="#" class="accordion-title">What makes us the best dermatologist in town?</a>
-                            <div class="accordion-content" data-tab-content id="deeplink4">
-                             Phasellus quis ex nec ex molestie tincidunt. Vimus cursus metus ac lacus comdsmo venenatis. The Aenean pulvinar ornare justo, eu efficitur leo  dinga mushi.
-                            </div>
-                        </li>
-                    </ul><!-- Cccordion /-->
-                </div><!-- cell /-->
-                
-                <div class="large-7 medium-12 small-12 cell">
-                	<div class="after-before-item">
-                        <div class="twentytwenty-container">
-                            <img src="assets/images/help/before.jpg" alt="" />
-                            <img src="assets/images/help/after.jpg" alt="" />
-                        </div><!-- First Pair /-->
-                    </div><!-- After Before Item /-->
-                </div><!-- cell /-->
-                
-            </div><!-- Grid Container /-->
-            
-        </div>
-        <!-- Why Chose Us /-->
-        
         <div class="testimonials dark-bg grey-bg">
         
             <div class="section-title-second">
@@ -370,21 +323,21 @@
             	<div class="testimonial-slid">
                 	
                 	<div class="testimonial-text">
-                        <img src="assets/images/help/testimonial-1.png" alt=""/>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
-                        <h6>John Doe - <span>Google Ads</span></h6>
+                        <img src="assets/images/help/author.png" alt=""/>
+                        <p>I was having Vitiligo on my Right hand, I went to A.N Skin Clinic and met Dr.Jayaraman, he is a very nice person, he treated me as a friend. got a very good result almost 90% of my patches got pigmentation.. Im so happy thank you. </p>
+                        <h6>Madhu M - <a class="color-red" href="https://www.google.com/search?q=A.n%20skin%20clinic&rlz=1C1HLDY_enIN780IN780&oq=a.n&aqs=chrome.0.69i59j69i57j69i61l3.5975j0j1&sourceid=chrome&ie=UTF-8&npsic=0&rflfq=1&rlha=0&rllag=13027144,80222231,4945&tbm=lcl&rldimm=15359212280000735860&ved=2ahUKEwjNgcC127bjAhVanI8KHcOoBaIQvS4wAXoECAsQKQ&rldoc=1&tbs=lrf:!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:2#lrd=0x3a52663342052ecd:0xd526e2312b42ea74,1,,,&rldoc=1&rlfi=hd:;si:15359212280000735860;mv:!1m2!1d13.0383149!2d80.2720878!2m2!1d13.0159731!2d80.1723742!3m12!1m3!1d10851.58181844255!2d80.222231!3d13.027143999999998!2m3!1f0!2f0!3f0!3m2!1i581!2i134!4f13.1;tbs:lrf:!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:2">Google Reviews</a></h6>
                     </div><!-- testimonial -->
                     
                     <div class="testimonial-text">
-                        <img src="assets/images/help/testimonial-2.png" alt=""/>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
-                        <h6>John Doe - <span>Google Ads</span></h6>
+                        <img src="assets/images/help/author.png" alt=""/>
+                        <p>Medical treatment is good. The doctor is really knowledgeable and very friendly. I have read some bad reviews about them but this clinic is near to my place so though of visiting here. I personally did not face any difficulty with them. </p>
+                        <h6>Siva kumar - <a class="color-red" href="https://www.google.com/search?q=A.n%20skin%20clinic&rlz=1C1HLDY_enIN780IN780&oq=a.n&aqs=chrome.0.69i59j69i57j69i61l3.5975j0j1&sourceid=chrome&ie=UTF-8&npsic=0&rflfq=1&rlha=0&rllag=13027144,80222231,4945&tbm=lcl&rldimm=15359212280000735860&ved=2ahUKEwjNgcC127bjAhVanI8KHcOoBaIQvS4wAXoECAsQKQ&rldoc=1&tbs=lrf:!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:2#lrd=0x3a52663342052ecd:0xd526e2312b42ea74,1,,,&rldoc=1&rlfi=hd:;si:15359212280000735860;mv:!1m2!1d13.0383149!2d80.2720878!2m2!1d13.0159731!2d80.1723742!3m12!1m3!1d10851.58181844255!2d80.222231!3d13.027143999999998!2m3!1f0!2f0!3f0!3m2!1i581!2i134!4f13.1;tbs:lrf:!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:2">Google Reviews</a></h6>
                     </div><!-- testimonial -->
                     
                     <div class="testimonial-text">
-                        <img src="assets/images/help/testimonial-1.png" alt=""/>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
-                        <h6>John Doe - <span>Google Ads</span></h6>
+                        <img src="assets/images/help/author.png" alt=""/>
+                        <p>Dr. Jaya Raman is one of the best vitiligo doctor in chennai, offers various cost effective treatments for vitiligo at A.N skin and hair Clinic, chennai. He also specializes in Lasert hair removal, laser for hair and acne. </p>
+                        <h6>Priya Pr - <a class="color-red" href="https://www.google.com/search?q=A.n%20skin%20clinic&rlz=1C1HLDY_enIN780IN780&oq=a.n&aqs=chrome.0.69i59j69i57j69i61l3.5975j0j1&sourceid=chrome&ie=UTF-8&npsic=0&rflfq=1&rlha=0&rllag=13027144,80222231,4945&tbm=lcl&rldimm=15359212280000735860&ved=2ahUKEwjNgcC127bjAhVanI8KHcOoBaIQvS4wAXoECAsQKQ&rldoc=1&tbs=lrf:!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:2#lrd=0x3a52663342052ecd:0xd526e2312b42ea74,1,,,&rldoc=1&rlfi=hd:;si:15359212280000735860;mv:!1m2!1d13.0383149!2d80.2720878!2m2!1d13.0159731!2d80.1723742!3m12!1m3!1d10851.58181844255!2d80.222231!3d13.027143999999998!2m3!1f0!2f0!3f0!3m2!1i581!2i134!4f13.1;tbs:lrf:!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:2">Google Reviews</a></h6>
                     </div><!-- testimonial -->
                     
                 </div><!-- testimonial Slid -->
@@ -407,7 +360,7 @@
                             <input type="email" name="email" value="" placeholder="Email Address">
                             <input type="text" name="phone" value="" placeholder="Phone Number">                                
                             <textarea name="message" id="Reason" class="form-control" rows="3" placeholder="Your Message here ..." required></textarea>              									
-                            <input type="submit" class="button secondary button-second" value="Send Message">
+                            <input type="submit" name="submit" class="button secondary button-second" value="Send Message">
                         </form>
                     </div><!-- Form/-->
                     <div class="clearfix"></div>
@@ -427,7 +380,7 @@
                         <div class="call-to-action-text">
                             <img src="assets/images/help/icons/ribbon.png" alt="Ribbon"/>
                             <h2>Its For your Great Skin!</h2>
-                            <p>Crown quis lectus et mauris commodo blandit. Morbi rutrum libero eget nibh facilisis sollicitudin.</p>
+                            <p>We Are Here When You Need, What are you waiting for? Fix an Appointment now.</p>
                             <a href="contact.html" class="button button-second secondary">fix an appointment</a>
                         </div><!-- Form/-->
                     </div><!-- cell /-->

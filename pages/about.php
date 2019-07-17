@@ -1,6 +1,7 @@
 <style>
-.color-red {
-    color: red;
+.w90 {
+    width: 90%;
+    margin: 0 auto;
 }
 </style>
         <div class="about-section module">
@@ -9,7 +10,7 @@
             	
                 <div class="small-12 medium-12 large-6 cell">
                 	<div class="about-img">
-                    	<img src="assets/images/help/doctor-image-1.png" alt="About-img" />
+                    	<img class="w90" src="assets/images/help/dc1.png" alt="About-img" />
                         <p>‘‘We trust that helping other’s can bring more happiness to our own life. We are available.’’</p>
                     </div>
                 </div><!-- Cell /-->
@@ -44,7 +45,7 @@
                         <div class="about-info-box">
                         	<i class="fas fa-check"></i>
                             <div class="about-info-text">
-                                <h4>30 Years Experienced</h4>
+                                <h4>30+ Years of Experience</h4>
                                 <!-- <p>Once upon a time there was a thirsty crow he flew here and there in search of water but he could not find water</p> -->
                             </div>
                         </div>

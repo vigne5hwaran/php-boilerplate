@@ -10,13 +10,13 @@
 	- Main CSS file is inside assets/css/theme-style.css
 -------------------------------------------------------------------*/
 
-@import "css/animate.css"; /* Including Animations CSS file */
-@import "css/owl.carousel.css"; /* Owl Carousel CSS File */
-@import "css/foundation.min.css"; /* Including Foundation CSS File */
-@import "css/theme-styles.css"; /* Main Theme CSS File */
-@import "css/responsive-styles.css"; /* Main Theme CSS File */
-@import "css/twentytwenty-no-compass.css"; /* TwentyTwenty JQuery Plugin */
-@import "css/fontawesome-all.min.css"; /* Including Font Awesome Icons */
+@import "assets/css/animate.css"; /* Including Animations CSS file */
+@import "assets/css/owl.carousel.css"; /* Owl Carousel CSS File */
+@import "assets/css/foundation.min.css"; /* Including Foundation CSS File */
+@import "assets/css/theme-styles.css"; /* Main Theme CSS File */
+@import "assets/css/responsive-styles.css"; /* Main Theme CSS File */
+@import "assets/css/twentytwenty-no-compass.css"; /* TwentyTwenty JQuery Plugin */
+@import "assets/css/fontawesome-all.min.css"; /* Including Font Awesome Icons */
 
 /**
  * Import Website Main Fonts 

@@ -1,3 +1,4 @@
+
 <div class="footer">
         	
             <div class="footer-top grey-bg">
@@ -6,20 +7,20 @@
         			
             		<div class="large-4 medium-4 small-12 cell">
                         <div class="footer-box footer-logo-side">
-                            <a href="#"><img src="assets/images/logoo.png" alt=""/></a>
-                            <p>We established our dermatology clinic in 1990 in your area now with portfolio of thousands of clients and great experience in industry we are proud to announce.</p>
+                            <a href="home.html"><img src="assets/images/logoo.png" alt=""/></a>
+                            <p>We established our dermatology clinic in 1985 in your area now with portfolio of thousands of clients and great experience in industry we are proud to announce.</p>
                             <div class="contact-us">
                             	<ul>
-                                    <li><i class="fas fa-map-marker-alt"></i><a href="#"><span>Address:</span> Mylapore, Chennai.</a></li>
-                                    <li><i class="fas fa-mobile-alt"></i><a href="#"><span>Phone:</span> +91 94442 61695</a></li>
-                                    <li><i class="fas fa-envelope"></i><a href="#"><span>Email:</span> jayaraamana@gmail.com</a></li>                     			</ul>
+                                    <li><i class="fas fa-map-marker-alt"></i><a><span>Address :</span> Mylapore, Chennai.</a></li>
+                                    <li><i class="fas fa-mobile-alt"></i><a href="tel:+919444261695"><span>Phone :</span> +91 94442 61695</a></li>
+                                    <li><i class="fas fa-envelope"></i><a href="mailto:jayaraamana@gmail.com"><span>Email :</span> jayaraamana@gmail.com</a></li>                     			</ul>
                             </div>
                             <div class="social-icons">
                             	<ul class="menu">
                                     <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                                     <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                                     <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                    <li><a href="https://youtu.be/SVSuEL2CIww"><i class="fab fa-youtube"></i></a></li>
                                     <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
                                 </ul>
                             </div>
@@ -37,20 +38,30 @@
                             </ul>
                         </div><!-- Footer Box /-->
                 	</div><!-- Cell /-->
-                	
+
                 	<div class="large-4 medium-4 small-12 cell">
                         <div class="footer-box border-btm">
-                        	<h6>Recent News</h6>
+                        	<h6>Working Hours</h6>
                             <div class="footer-news-post">
-                                <div class="footer-news">
-                                    <img src="assets/images/help/footer-icon-1.jpg" alt="News"/>
-                                    <h2><a href="#">How can we help you get the amazing skin results from us?</a></h2>
-                                    <p>01 August 2018</p>
+                                <div class="footer-news" style="border-bottom:none; margin:0;padding:0;">
+                                    <!-- <img src="assets/images/help/icons/pointer.png" alt="News"/> -->
+                                    <h2 style="margin:0;padding:0;"><a>A.N.SKIN & COSMETIC CLINIC <br />Mon-Sat : 06:00pm - 09:00pm</a></h2>
+                                    <p>Mylapore, Chennai.</p>
                                 </div>
-                            	<div class="footer-news">
-                                    <img src="assets/images/help/footer-icon-2.jpg" alt="News"/>
-                                    <h2><a href="#">How can you keep your skin glowing and infection less in sprint</a></h2>
-                                    <p>01 August 2018</p>
+                            	<div class="footer-news" style="border-bottom:none; margin:0;padding:0;">
+                                    <!-- <img src="assets/images/help/footer-icon-2.jpg" alt="News"/> -->
+                                    <h2 style="margin:0;padding:0;"><a>A.N.SKIN & COSMETIC CLINIC <br />All Days : 10.00am - 01.00pm</a></h2>
+                                    <p>Manappakkam, Chennai.</p>
+                                </div>
+                            	<div class="footer-news" style="border-bottom:none; margin:0;padding:0;">
+                                    <!-- <img src="assets/images/help/footer-icon-2.jpg" alt="News"/> -->
+                                    <h2 style="margin:0;padding:0;"><a>Apollo Speciality Hospital <br />Mon-Sat : 04.00pm to 05.00pm</a></h2>
+                                    <p>Teynampet, Chennai.</p>
+                                </div>
+                            	<div class="footer-news" style="border-bottom:none; margin:0;padding:0;">
+                                    <!-- <img src="assets/images/help/footer-icon-2.jpg" alt="News"/> -->
+                                    <h2 style="margin:0;padding:0;"><a>Chennai Meenakshi Hospital <br />Mon-Sat : 05.00pm to 06.00pm</a></h2>
+                                    <p>Mylapore, Chennai.</p>
                                 </div>
                             </div>
                         </div><!-- Footer Box /-->
