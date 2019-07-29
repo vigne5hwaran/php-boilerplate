@@ -1,1 +1,3 @@
-php-website-cd
+php-website-boilerplate
+
+php Template for a simple website
