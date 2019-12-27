@@ -1,1 +1,1 @@
-<?php include_once('includes/page.php')?>
+<?php include_once'includes/page.php'; ?>
