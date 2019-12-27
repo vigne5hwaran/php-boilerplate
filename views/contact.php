@@ -64,7 +64,7 @@
 								</div>
 								<div class="form-group col-lg-12">
 									<label>Recaptcha</label>
-									<div class="g-recaptcha" data-sitekey="6LdSS7kUAAAAANzzuoTVsq-nP5teBODrYAZex5LA" 
+									<div class="g-recaptcha" data-sitekey="your_site_key" 
                                         data-callback="recaptchaCallback" data-expired-callback="recaptchaExpired"></div>
                                     <input id="grecaptcha" name="grecaptcha" type="text" 
                                         style="opacity: 0; position: absolute; top: 0; left: 0; height: 1px; width: 1px;" />
