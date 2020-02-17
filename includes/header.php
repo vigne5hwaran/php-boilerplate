@@ -76,42 +76,6 @@
                 </div><!-- /.navbar-collapse -->
             </div>
 
-            <!-- Start Side Menu -->
-            <div class="side">
-                <a href="#" class="close-side"><i class="fa fa-times"></i></a>
-                <div class="widget">
-                    <h4 class="title">About Us</h4>
-                    <p>
-                        Arrived compass prepare an on as. Reasonable particular on my it in sympathize. Size now easy
-                        eat hand how. Unwilling he departure elsewhere dejection at. Heart large seems may purse means
-                        few blind.
-                    </p>
-                </div>
-                <div class="widget">
-                    <h4 class="title">Treatment</h4>
-                    <ul>
-                        <li><a href="gi-oncology"> Gi Oncology</a></li>
-                        <li><a href="urology"> Urology</a></li>
-                        <li><a href="breast"> Breast</a></li>
-                        <li><a href="gynaec-oncology"> Gynaec oncology</a></li>
-                        <li><a href="bone"> Bone</a></li>
-                        <li><a href="skin"> Skin</a></li>
-                        <li><a href="thyroid"> Thyroid</a></li>
-                        <li><a href="hipec-surgery"> HIPEC Surgery</a></li>
-                    </ul>
-                </div>
-                <div class="widget social">
-                    <h4 class="title">Connect With Us</h4>
-                    <ul class="link">
-                        <li class="facebook"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li class="twitter"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li class="pinterest"><a href="#"><i class="fab fa-pinterest"></i></a></li>
-                        <li class="dribbble"><a href="#"><i class="fab fa-dribbble"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <!-- End Side Menu -->
-
         </nav>
         <!-- End Navigation -->
 

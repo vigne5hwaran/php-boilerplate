@@ -3,64 +3,28 @@
 // meta tags values ************************************************
 $pg_meta = array(
 	'index'			=> array(
-		'key'	=> 'Gastroenterologist in Chromepet, Surgical Gastroenterologist in Chromepet, Gastroenterologist in Chennai',
-		'desc'	=> 'Vanaja Hospital'
+		'key'	=> 'keywords',
+		'desc'	=> 'Descriptions'
 	),
 	'home'			=> array(
-		'key'	=> 'Gastroenterologist in Chromepet, Surgical Gastroenterologist in Chromepet, Gastroenterologist in Chennai',
-		'desc'	=> 'Vanaja Hospital'
+		'key'	=> 'keywords',
+		'desc'	=> 'Descriptions'
 	),
 	'about'			=> array(
-		'key'	=> 'Dr. Senthil Ganesan, Surgical Gastroenterologist, Dr. Senthil Ganesan chromepet, Association of surgeons of india',
-		'desc'	=> 'Dr.Senthil Ganesan completed his MBBS from Thanjavur medical college, Thanjavur. He has completed general surgery training from All India Institute Of Medical Sciences New Delhi in 2008'
+		'key'	=> 'keywords',
+		'desc'	=> 'Descriptions'
 	),
 	'contact'		=> array(
-		'key'	=> 'Contact Ambe clinic, Ambe clinic, Ambe clinic chromepet',
-		'desc'	=> 'Vanaja Hospital'
+		'key'	=> 'keywords',
+		'desc'	=> 'Descriptions'
 	),
 	'faq'			=> array(
-		'key'	=> 'Gastroenterologist Frequently Asked Question, faq for gastroenterologist',
-		'desc'	=> 'If you are 45 years or older, have a family history of GI cancer, or if you have complained to your family doctor about digestive problem such as frequent abdominal pain, nausea, diarrhea, constipation, or heartburn, something is affecting your digestive system'
+		'key'	=> 'keywords',
+		'desc'	=> 'Descriptions'
 	),
 	'testimonial'	=> array(
-		'key'	=> 'Testimonial for Gastroenterologist, ',
-		'desc'	=> 'The doctor is simply humble, polite and very elegant. He also explained the result very clearly and made me feel completely satisfied.'
-	),
-	'ulcer'	=> array(
-		'key'	=> 'ulcer treatment in chromepet, ulcer remedy, ulcer causes, what is ulcer',
-		'desc'	=> 'The stomach produces a strong acid to help digest food and protect against microbes. To protect the tissues of the body from this acid, it also secretes a thick layer of mucus.'
-	),
-	'hernia'	=> array(
-		'key'	=> 'hernia treatment in chromepet, hernia remedy, hernia causes, what is hernia',
-		'desc'	=> 'Hernias are due to weakened muscles that may have been present since birth, or are associated with aging and repeated strains on the abdominal and groin areas.'
-	),
-	'piles'	=> array(
-		'key'	=> 'piles treatment in chromepet, piles remedy, piles causes, what is piles',
-		'desc'	=> 'Piles are inflamed and swollen collections of tissue in the anal area. A hard, possibly painful lump may be felt around the anus.'
-	),
-	'heart-burn'	=> array(
-		'key'	=> 'Heart Burn treatment in chromepet, Heart Burn remedy, Heart Burn causes, what is Heart Burn',
-		'desc'	=> 'Heartburn is a burning pain in your chest, just behind your breastbone. The pain is often worse after eating, in the evening,.'
-	),
-	'constipation'	=> array(
-		'key'	=> 'constipation treatment in chromepet, constipation remedy, constipation causes, what is constipation',
-		'desc'	=> 'Constipation can happen for many reasons, such as when stool passes through the colon too slowly. The slower the food moves through the digestive tract.'
-	),
-	'gall-bladder'	=> array(
-		'key'	=> 'Gall Bladder treatment in chromepet, Gall Bladder remedy, Gall Bladder causes, what is Gall Bladder',
-		'desc'	=> 'Gallstones are hardened deposits of the digestive fluid bile, that can form within the gallbladder. They vary in size and shape from as small.'
-	),
-	'liver-diseases'	=> array(
-		'key'	=> 'Liver Diseases treatment in chromepet, Liver Diseases remedy, Liver Diseases causes, what is Liver Diseases',
-		'desc'	=> 'The liver is an organ about the size of a football that sits just under your rib cage on the right side of your abdomen.'
-	),
-	'pancreas-stone'	=> array(
-		'key'	=> 'Pancreas Stone treatment in chromepet, Pancreas Stone remedy, Pancreas Stone causes, what is Pancreas Stone',
-		'desc'	=> 'The most common cause of acute pancreatitis is stones in the gallbladder. Gallstones pass through the common bile duct to enter the small intestine.'
-	),
-	'surgical-gastroenterology'	=> array(
-		'key'	=> 'Surgical Gastroenterology treatment in chromepet, what is Surgical Gastroenterology',
-		'desc'	=> 'The stomach produces a strong acid to help digest food and protect against microbes. To protect the tissues of the body from this acid,.'
+		'key'	=> 'keywords',
+		'desc'	=> 'Descriptions'
 	)
 );
 
@@ -172,6 +136,8 @@ $testimonial = array(
 $testi_slice = array_slice($testimonial, 0, 2);
 $testi_2 = array_slice($testimonial, 2, 2);
 
+
+// youtube 
 $youtube = array(
 	'video-1'	=>	'https://www.youtube.com/watch?v=MH8Qnd5jX6c',
 	'video-2'	=>	'https://www.youtube.com/watch?v=Q2V3N7-dDGM',
@@ -179,6 +145,16 @@ $youtube = array(
 	'video-4'	=>	'https://www.youtube.com/watch?v=9BUrngIGOCY'
 );
 
+
+// galler 
+$images = array(
+	'photo 1' => 'gallery-1.jpg',
+	'photo 2' => 'gallery-2.jpg',
+	'photo 3' => 'gallery-3.jpg',
+	'photo 4' => 'gallery-9.jpg',
+	'photo 5' => 'gallery-10.jpg',
+	'photo 6' => 'gallery-11.jpg'
+);
 
 // faq ************************************************************
 

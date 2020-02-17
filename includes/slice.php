@@ -39,7 +39,7 @@ class Header extends Func {
 
 	public function meta($title, $key, $desc) {
 		echo '
-		<title>'.$title.' | AMBE CLINIC, Chrompet, Chennai</title>
+		<title>'.$title.' | My site title</title>
 		<meta name="keywords" content="'.$key.'" />
 		<meta name="description" content="'.$desc.'" />
 		<meta name="author" content="Brite Infomedia" />
@@ -80,13 +80,13 @@ class Header extends Func {
 							<div class="info box">
 								<ul>
 									<li>
-										<i class="fas fa-map-marker-alt"></i> Kilpauk, Chennai, 600010
+										<i class="fas fa-map-marker-alt"></i>Chennai, 600010
 									</li>
 									<li>
-										<i class="fas fa-envelope-open"></i> ayyappas1@yahoo.co.uk
+										<i class="fas fa-envelope-open"></i> mysite@yahoo.co.uk
 									</li>
 									<li>
-										<i class="fas fa-phone"></i> +044 - 4295 6777
+										<i class="fas fa-phone"></i> +044 - 4000 0000
 									</li>
 								</ul>
 							</div>
@@ -200,14 +200,7 @@ class Page {
 	}
 	public function photos() {
 		$path = 'assets/images/gallery/';
-		$images = array(
-			'photo 1' => 'gallery-1.jpg',
-			'photo 2' => 'gallery-2.jpg',
-			'photo 3' => 'gallery-3.jpg',
-			'photo 4' => 'gallery-9.jpg',
-			'photo 5' => 'gallery-10.jpg',
-			'photo 6' => 'gallery-11.jpg'
-		);
+		global $images;
 		foreach($images as $key => $value) {
 			$val = $path.$value;
 			echo '
