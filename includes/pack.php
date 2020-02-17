@@ -12,7 +12,7 @@ if(isset($_REQUEST['name'])){
 }
 
 // Base URL Start=================
-$url = '/cleve/';
+$url = '/onco/';
 if(isset($_SERVER['HTTPS'])) {
 	$base_url = 'https://'.$_SERVER['HTTP_HOST'].$url;
 }
@@ -24,6 +24,7 @@ else{
 if($pg_key=='home' || $pg_key=='index'){
 	$pg_slug = 'home';
 }
+$pg_key = ($pg_key == 'index')?'home':$pg_key;
 
 // URLConverter Start=================
 $pg_slug .= '.php';

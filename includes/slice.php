@@ -1,13 +1,41 @@
 <?php 
 include_once'includes/data.php';
 
-class Header{
-	public function meta_data($in){
+class Func {
+	public function keytoslug($arg) {
+		$arg = strtolower($arg);
+		$arg = str_replace(' ', '-', $arg);
+		return $arg;
+	}
+
+	public function slugtokey($arg) {
+		$arg = ucwords(str_replace('-', ' ', $arg));
+		return $arg;
+	}
+
+	public function meta_data($in) {
 		global $pg_meta;
-		if(isset($pg_meta[$in])){
+		if(isset($pg_meta[$in])) {
 			return $pg_meta[$in];
 		}
 	}
+
+	public function active($arg1,$arg2) {
+		if(is_array($arg2) && isset($arg2[$arg1])) {
+			return 'active';
+		} else {
+			if(($arg1=='index' || $arg1=='home') && $arg2=='index') {
+				return 'active';
+			} else if($arg1==$arg2) {
+				return 'active';
+			}
+		}
+	}
+
+}
+
+
+class Header extends Func {
 
 	public function meta($title, $key, $desc) {
 		echo '
@@ -18,165 +46,119 @@ class Header{
 		';
 	}
 	
-	public function links() {
+	public function styles() {
 		echo '
-			<!-- Bootstrap core CSS -->
-			<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-			<!-- Google Font  -->
-			<link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,700|Raleway:400,400i,500i,600,700"
-				rel="stylesheet">
-			<!-- flaticon icon -->
-			<link rel="stylesheet" href="assets/fonts/icon-font.min.css">
-			<!-- icofont icon -->
-			<link rel="stylesheet" href="assets/fonts/icofont.css">
-			<!--- meanmenu Css-->
-			<link rel="stylesheet" href="assets/css/meanmenu.min.css" media="all" />
-			<!-- animate CSS -->
-			<link rel="stylesheet" href="assets/css/animate.css">
-			<!--- owl carousel Css-->
-			<link rel="stylesheet" href="assets/owlcarousel/css/owl.carousel.min.css">
-			<link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.default.min.css">
-			<!-- venobox -->
-			<link rel="stylesheet" href="assets/venobox/css/venobox.css" />
-			<!-- whatsapp -->
-			<link rel="stylesheet" href="assets/venobox/css/floating-wpp.min.css" />
-			<!-- Style CSS -->
-			<link rel="stylesheet" href="assets/css/style.css">
-			<!-- Responsive  CSS -->
-			<link rel="stylesheet" href="assets/css/responsive.css">
-			';
+		<!-- ========== Start Stylesheet ========== -->
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+		<link href="assets/css/flaticon-set.css" rel="stylesheet" />
+		<link href="assets/css/magnific-popup.css" rel="stylesheet" />
+		<link href="assets/css/owl.carousel.min.css" rel="stylesheet" />
+		<link href="assets/css/owl.theme.default.min.css" rel="stylesheet" />
+		<link href="assets/css/animate.css" rel="stylesheet" />
+		<link href="assets/css/bootsnav.css" rel="stylesheet" />
+		<link href="style.css" rel="stylesheet">
+		<link href="assets/css/responsive.css" rel="stylesheet" />
+		<!-- ========== End Stylesheet ========== -->
+		<link type="text/css" rel="Stylesheet" 
+    	href="<?php echo CaptchaUrls::LayoutStylesheetUrl() ?>" />';
 	}
 
-	public function active($arg1,$arg2){
-		if(is_array($arg2) && isset($arg2[$arg1])){
-			return 'active';
-		}else{
-			if(($arg1=='index' || $arg1=='home') && $arg2=='index'){
-				return 'active';
-			}else if($arg1==$arg2){
-				return 'active';
-			}
-		}
-	}
-
-	public function mobile_nav(){
-		global $all_pages;
-		foreach($all_pages as $k1=>$v1){
-			if(is_array($v1)){
-				echo '<li><a href="javascript:void(0);">'.$k1.'</a>';
-				echo '<ul>';
-					foreach($v1 as $k2=>$v2){
-						echo '<li><a href="'.$k2.'">'.$v2.'</a></li>';
-					}
-				echo '</ul>
-					</li>';
-			}else{
-				echo '<li><a href="'.$k1.'">'.$v1.'</a></li>';
-			}
-		}
-	}
-
-	public function desk_nav($key){
-		global $all_pages;
-		$key = ($key == 'index')?'home':$key;
-		foreach($all_pages as $k1=>$v1){
-			if(is_array($v1)){
-				echo '<li class="dropdown '.$this->active($key,$v1).'"><a href="javascript:void(0);" class="nav-link">'.$k1.'</a>';
-				echo '<ul class="dropdown-menu">';
-					foreach($v1 as $k2=>$v2){
-						echo '<li><a href="'.$k2.'">'.$v2.'</a></li>';
-					}
-				echo '</ul>
-					</li>';
-			}else{
-				echo '<li class="'.$this->active($key,$k1).'"><a href="'.$k1.'" class="nav-link">'.$v1.'</a></li>';
-			}
-		}
-	}
 
 	public function preloader() {
-		echo '	<!-- START PRELOADER -->
-				<div id="page-preloader">
-					<div class="preloader-wrench"></div>
-				</div>
-				<!-- END PRELOADER -->';
+		echo '	<!-- Preloader Start -->
+				<div class="se-pre-con"></div>
+				<!-- Preloader Ends -->';
 	}
 
 	public function topbar() {
 		echo '
-			<!-- START LOGO AREA -->
-			<div class="logo-area">
-				<div class="auto-container">
+			<div class="top-bar-area inline inc-border">
+				<div class="container">
 					<div class="row">
-						<div class="col-lg-3 col-md-3 col-sm-6 col-7 mx-md-auto mx-sm-auto mx-auto pl-0">
-							<div class="logo">
-								<a href="home">
-									<img class="img-fluid logo-img" src="assets/img/ambe-logo-2.png" alt="logo">
-								</a>
+						<div class="col-md-8 address-info text-left">
+							<div class="info box">
+								<ul>
+									<li>
+										<i class="fas fa-map-marker-alt"></i> Kilpauk, Chennai, 600010
+									</li>
+									<li>
+										<i class="fas fa-envelope-open"></i> ayyappas1@yahoo.co.uk
+									</li>
+									<li>
+										<i class="fas fa-phone"></i> +044 - 4295 6777
+									</li>
+								</ul>
 							</div>
 						</div>
-						<!-- end col -->
-						<div class="col-lg-9 col-md-12 col-sm-12 col-12">
-							<div class="header-info-box">
-								<div class="header-info-icon"><span class="lnr lnr-phone-handset"></span></div>
-								<p>For Appointments</p>
-								<h6>044-43535554</h6>
-							</div>
-							<div class="header-info-box">
-								<div class="header-info-icon"><span class="lnr lnr-map-marker"></span></div>
-								<p>Consulting hours</p>
-								<h6>Mon - Sat : 5 pm - 7 pm</h6>
-							</div>
-							<div class="header-info-box">
-								<a class="header-quote-btn" href="contact">Appointment <i
-										class="icofont icofont-caret-right"></i></a>
-							</div>
+						<div class="col-md-4 bar-btn text-right">
+							<a href="contact">Make Appoinment</a>
 						</div>
-						<!-- end col -->
 					</div>
 				</div>
-			</div>
-			<!-- END LOGO AREA -->';
+			</div>';
+	}
+
+	public function nav($key){
+		global $all_pages;
+		// $key = ($key == 'index')?'home':$key;
+		foreach($all_pages as $k1=>$v1){
+			if(is_array($v1)){
+				echo '<li class="dropdown '.$this->active($key,$v1).'"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">'.$k1.'</a>';
+				echo '<ul class="dropdown-menu">';
+					foreach($v1 as $k2=>$v2){
+						if(is_array($v2)) {
+							$kt = $k2;
+							$kt = $this->keytoslug($kt);
+							echo '<li class="dropdown '.$this->active($key,$v2).'"><a href="'.$kt.'" class="dropdown-toggle" data-toggle="dropdown">'.$k2.'</a>
+									<ul class="dropdown-menu">';
+							foreach($v2 as $k3=>$v3){
+								echo '<li class="'.$this->active($key,$k3).'"><a href="'.$k3.'">'.$v3.'</a></li>';
+							}
+							echo '</ul>';
+						} else {
+							echo '<li class="'.$this->active($key,$k2).'"><a href="'.$k2.'">'.$v2.'</a></li>';
+						}
+					}
+				echo '</ul></li>';
+			}else{
+				echo '<li class="'.$this->active($key,$k1).'"><a href="'.$k1.'">'.$v1.'</a></li>';
+			}
+		}
 	}
 
 	public function breadcrum($key) {
-		if($key == 'about' || $key == 'contact') {
+		if($key == 'contact') {
 			$key .= ' us';
 		}
-		if($key == 'faq') {
-			$key = strtoupper($key);
-		}
 		$key2 = $key;
-		$key = ucwords(str_replace('-', ' ', $key));
-		$pages = array('about us', 'FAQ', 'contact us', 'testimonial', 'appointment');
-		global $service;
-		echo '<!-- START PAGE BANNER AND BREADCRUMBS -->
-				<section class="single-page-title-area" data-background="assets/img/bg/heading.png">
-					<div class="auto-container">
-						<div class="row">
-							<div class="col-lg-8 col-md-8 col-sm-12 col-12">
-								<div class="single-page-title">';
-								if(in_array($key2,$pages) || in_array($key2,$service)) {
-									echo	'<h2>'.$key.'</h2>';
-								} else {
-									echo	'<h2>Page Not Found</h2>';
+		$key = $this->slugtokey($key);
+		$pages = array('specialist', 'contact us', 'photo-gallery', 'video-gallery', 'appointment');
+		global $service_keys;
+		// print_r($service_keys);
+		echo '<div class="breadcrumb-area shadow dark bg-fixed text-light"
+				style="background-image: url(assets/img/banner/12.jpg);">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">';
+							if(in_array($key2,$pages) || in_array($key2,$service_keys)) {
+								echo '<h1>'.$key.'</h1>';
+							} else {
+								echo '<h1>Page Not Found</h1>';
+							}
+						echo '</div>
+						<div class="col-md-6 text-right">
+							<ul class="breadcrumb">
+								<li><a href="home"><i class="fas fa-home"></i> Home</a></li>';
+								if(in_array($key2,$service_keys)){
+									echo	'<li><a href="javascript:void();">Treatment</a></li>';
 								}
-							echo '</div>
-							</div>
-							<div class="col-lg-4 col-md-4 col-sm-12 col-12">
-								<ol class="breadcrumb">
-									<li class="breadcrumb-item"><a href="home"><span class="lnr lnr-home"></span></a></li>';
-									if(in_array($key2,$service)){
-										echo	'<li class="breadcrumb-item">Services</li>';
-									}
-							echo	'<li class="breadcrumb-item active">'.$key.'</li>
-								</ol>
-							</div>
+							echo '<li class="active">'.$key.'</li>
+							</ul>
 						</div>
-						<!-- end row-->
 					</div>
-				</section>
-				<!-- END PAGE BANNER AND BREADCRUMBS -->';
+				</div>
+			</div>';
 	}
 }
 
@@ -272,54 +254,7 @@ class Page {
 			data-background="assets/img/bg/counter-bg.jpg">
 			<div class="container">
 				<div class="row wow fadeInDown">
-					<div class="col-lg-3 col-md-6 col-sm-12 col-12 mb-lg-0 mb-md-4 mb-sm-4 mb-4">
-						<div class="single-counter">
-							<div class="single-counter-icon">
-								<i class="icofont icofont-users-alt-2"></i>
-							</div>
-							<div class="single-counter-text">
-								<h5 class="timer">1250</h5>
-								<p>Happy Patients</p>
-							</div>
-						</div>
-					</div>
-					<!-- end single counter -->
-					<div class="col-lg-3 col-md-6 col-sm-12 col-12 mb-lg-0 mb-md-4 mb-sm-4 mb-4">
-						<div class="single-counter">
-							<div class="single-counter-icon">
-								<i class="icofont icofont-nurse-alt"></i>
-							</div>
-							<div class="single-counter-text">
-								<h5 class="timer">1350</h5>
-								<p>Medical Workers</p>
-							</div>
-						</div>
-					</div>
-					<!-- end single counter -->
-					<div class="col-lg-3 col-md-6 col-sm-12 col-12 mb-lg-0 mb-md-4 mb-sm-4 mb-4">
-						<div class="single-counter">
-							<div class="single-counter-icon">
-								<i class="icofont icofont-doctor-alt"></i>
-							</div>
-							<div class="single-counter-text">
-								<h5 class="timer">1560</h5>
-								<p>Total Doctors</p>
-							</div>
-						</div>
-					</div>
-					<!-- end single counter -->
-					<div class="col-lg-3 col-md-6 col-sm-12 col-12 mb-lg-0 mb-md-4 mb-sm-4 mb-4">
-						<div class="single-counter">
-							<div class="single-counter-icon">
-								<i class="icofont icofont-hat-alt"></i>
-							</div>
-							<div class="single-counter-text">
-								<h5 class="timer">1670</h5>
-								<p>Medical Experience</p>
-							</div>
-						</div>
-					</div>
-					<!-- end single counter -->
+					<h1>"We Make Quality Healthcare"</h1>
 				</div>
 			</div>
 			<!--- END CONTAINER -->
@@ -332,79 +267,26 @@ class Page {
 $page = new Page;
 
 class Footer {
-	public function footer_content(){
-		echo '
-			<div class="footer-content">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-6">
-							<div class="info-footer">
-								<div class="info-footer-img btn-for-icon bottom"><i class="icon1 icon-hphone"></i>
-								</div>
-								<h2 class="title-footer">+91 97910 57748</h2>
-								<div class="footer-description">For emergency case </div>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="info-footer">
-								<div class="info-footer-img btn-for-icon bottom"><i class="icon1 icon-hmail"></i>
-								</div>
-								<h2 class="title-footer">vanajahospital@gmail.com</h2>
-								<div class="footer-description">Send Email For Help</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		';
-	}
 
-	public function script($key){
+	public function script(){
 		echo '
-			<!-- Latest jQuery -->
-			<script src="assets/js/jquery-2.2.4.min.js"></script>
-			<!-- popper js -->
-			<script src="assets/bootstrap/js/popper.min.js"></script>
-			<!-- Latest compiled and minified Bootstrap -->
-			<script src="assets/bootstrap/js/bootstrap.min.js"></script>
-			<!-- meanmenu min js  -->
-			<script src="assets/js/jquery.meanmenu.min.js"></script>
-			<!-- Sticky JS -->
-			<script src="assets/js/jquery.sticky.js"></script>
-			<!-- gijgo js  -->
-			<script src="assets/js/gijgo.js"></script>
-			<!-- owl-carousel min js  -->
-			<script src="assets/owlcarousel/js/owl.carousel.min.js"></script>
-			<!-- jquery appear js  -->
+			<script src="assets/js/jquery-1.12.4.min.js"></script>
+			<script src="assets/js/bootstrap.min.js"></script>
+			<script src="assets/js/equal-height.min.js"></script>
 			<script src="assets/js/jquery.appear.js"></script>
-			<!-- countTo js -->
-			<script src="assets/js/jquery.inview.min.js"></script>
-			<!-- jquery mixitup js -->
-			<script src="assets/js/jquery.mixitup.min.js"></script>
-			<!-- venobox js -->
-			<script src="assets/venobox/js/venobox.min.js"></script>
-			<!-- scrolltopcontrol js -->
-			<script src="assets/js/scrolltopcontrol.js"></script>
-			<!-- WOW - Reveal Animations When You Scroll -->
-			<script src="assets/js/wow.min.js"></script>';
-			if($key == 'contact') {
-				echo '
-				<!-- recaptcha -->
-        		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
-				<!-- Form Validator JS -->
-				<script src="assets/js/form-validator.min.js"></script>
-				<!-- Form Validator JS -->
-				<script src="assets/js/jquery.validate.min.js"></script>
-				<!-- Contact Validator config -->
-				<script src="assets/js/validation-script.js"></script>
-				<!-- Contact Form JS -->
-				<script src="assets/js/ajax-script.js"></script>
-				';
-			}
-		echo '<!-- whatasapp -->
-			<script src="assets/js/floating-wpp.min.js"></script>
-			<!-- scripts js -->
-			<script src="assets/js/scripts.js"></script>';;
+			<script src="assets/js/jquery.easing.min.js"></script>
+			<script src="assets/js/jquery.magnific-popup.min.js"></script>
+			<script src="assets/js/modernizr.custom.13711.js"></script>
+			<script src="assets/js/owl.carousel.min.js"></script>
+			<script src="assets/js/wow.min.js"></script>
+			<script src="assets/js/isotope.pkgd.min.js"></script>
+			<script src="assets/js/imagesloaded.pkgd.min.js"></script>
+			<script src="assets/js/count-to.js"></script>
+			<script src="assets/js/jquery.nice-select.min.js"></script>
+			<script src="assets/js/bootsnav.js"></script>
+			<script src="assets/js/main.js"></script>
+			<!-- recaptcha -->
+        	<script src="https://www.google.com/recaptcha/api.js" async defer></script>';
 	}
 
 	// public function pg_script($in){
