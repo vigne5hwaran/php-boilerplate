@@ -1,4 +1,7 @@
 <?php
+
+// require_once'includes/db.php';
+
 //session_destroy();
 $pg_slug = $pg_key = $pg_real = 'index';
 if(isset($_REQUEST['name'])){

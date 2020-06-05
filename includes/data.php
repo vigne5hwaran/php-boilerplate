@@ -3,134 +3,111 @@
 // meta tags values ************************************************
 $pg_meta = array(
 	'index'			=> array(
-		'key'	=> 'keywords',
-		'desc'	=> 'Descriptions'
+    'title' => 'Best Knee Surgery in Chennai',
+		'key'	=> 'Knee replacement Chennai, Knee specialist chennai,Knee pain treatment, Knee transplant chennai, Knee surgeon chennai, Best knee surgeon chennai, Best Ortho surgeon chennai, Best Ortho specialist chennai, Knee injury specialist, Key hole surgery specialist, Ligament surgery specialist',
+		'desc'	=> 'Dr. Kanna Knee & Ortho Clinic is a pioneering effort in Chennai, located at the heart of the city at Shanthi Colony, Anna Nagar. The clinic offers specialized care for arthritis, ligament injuries and various other knee disorders by delivering the latest and best in knee care for every patient'
 	),
 	'home'			=> array(
-		'key'	=> 'keywords',
-		'desc'	=> 'Descriptions'
+    'title' => 'Best Knee Surgery in Chennai',
+		'key'	=> 'Knee replacement Chennai, Knee specialist chennai,Knee pain treatment, Knee transplant chennai, Knee surgeon chennai, Best knee surgeon chennai, Best Ortho surgeon chennai, Best Ortho specialist chennai, Knee injury specialist, Key hole surgery specialist, Ligament surgery specialist',
+		'desc'	=> 'Dr. Kanna Knee & Ortho Clinic is a pioneering effort in Chennai, located at the heart of the city at Shanthi Colony, Anna Nagar. The clinic offers specialized care for arthritis, ligament injuries and various other knee disorders by delivering the latest and best in knee care for every patient'
 	),
 	'about'			=> array(
-		'key'	=> 'keywords',
-		'desc'	=> 'Descriptions'
+    'title' => 'About Dr Raj kanna knee Surgeon in Chennai',
+		'key'	=> 'Dr Raj kanna Knee news in chennai, dr raj kanna news letter in chennai,Best Knee Osteoarthritis treatment in chennai',
+		'desc'	=> 'Lifetime squatting, lotus (cross leg sitting) and side-knee bending positions increase the risk of knee osteoarthritis'
 	),
-	'contact'		=> array(
-		'key'	=> 'keywords',
-		'desc'	=> 'Descriptions'
+	'contact'			=> array(
+    'title' => 'Dr.Raj Kanna Knee Clinic in chennai, anna nagar, Knee Clinic in chennai, anna nagar',
+		'key'	=> 'Dr.Raj Kanna Knee Clinic in chennai, anna nagar, Knee Clinic in chennai, anna nagar, arthopedic surgeon in chennai, Anna nagar,  arthopedic clinic in chennai, Anna nagar',
+		'desc'	=> 'Total Knee Replacement (TKR) surgery is one of the most significant advancements of the 20th century in orthopaedic surgery. With rapid improvement in technology, computer navigation is being increasingly used in knee replacement surgeries.'
+	),
+	'appointment'			=> array(
+    'title' => 'Dr.Raj Kanna Knee Clinic in chennai, anna nagar, Knee Clinic in chennai, anna nagar',
+		'key'	=> 'Dr.Raj Kanna Knee Clinic in chennai, anna nagar, Knee Clinic in chennai, anna nagar, arthopedic surgeon in chennai, Anna nagar,  arthopedic clinic in chennai, Anna nagar',
+		'desc'	=> 'Total Knee Replacement (TKR) surgery is one of the most significant advancements of the 20th century in orthopaedic surgery. With rapid improvement in technology, computer navigation is being increasingly used in knee replacement surgeries.'
 	),
 	'faq'			=> array(
-		'key'	=> 'keywords',
-		'desc'	=> 'Descriptions'
-	),
-	'testimonial'	=> array(
-		'key'	=> 'keywords',
-		'desc'	=> 'Descriptions'
+    'title' => 'FAQ about Knee',
+		'key'	=> 'Dr Raj kanna Knee news in chennai, dr raj kanna news letter in chennai,Best Knee Osteoarthritis treatment in chennai',
+		'desc'	=> 'Habitual Floor Activities Increase Risk of Knee Osteoarthritis? Lifetime squatting, lotus (cross leg sitting) and side-knee bending positions increase the risk of knee osteoarthritis'
 	)
 );
 
 // all menus *********************************************************
 $all_pages = array(
-	'home'		=> 'Home',
-	'specialist'			=> 'Specialist',
-	'Cancer & Treatment'	=> array(
-		'Gi Oncology'		=> array(
-			'billary'				=> 'Billary',
-			'colon'					=> 'Colon',
-			'colorectal-cancer'		=> 'Colorectal Cancer',
-			'liver'					=> 'Liver',
-			'lung'					=> 'Lung',
-			'neuroendocrine'		=> 'Neuroendocrine',
-			'oesophago'				=> 'Oesophago',
-			'stomach'				=> 'Stomach'
-		),
-		'Urology'			=> array(
-			'prostate'				=> 'Prostate',
-			'urology-kidney'		=> 'Urology Kidney',
-			'urinary-bladder'		=> 'Urinary Bladder',
-		),
-		'Breast'			=> array(
-			'breast-cancer'					=> 'Breast Cancer',
-			'breast-construction-surgery'	=> 'Breast Construction Surgery',
-			'sentinel-lymph-node-biopsy'	=> 'Sentinel Lymph Node Biopsy',
-		),
-		'Gynaec oncology'				=> array(
-			'ovary'					=> 'ovary',
-			'cervical'				=> 'Cervical',
-			'uterus-cancer'			=> 'Uterus Cancer',
-		),
-		'Bone'			=> array(
-			'bone-cancer'					=> 'Bone Cancer',
-			'soft-tissue-sarcomas'	=> 'Soft tissue sarcomas',
-		),
-		'skin'			=> 'Skin',
-		'thyroid'		=> 'Thyroid',
-		'hipec-surgery'	=> 'HIPEC Surgery'
-	),
-	'Gallery' 			=> array(
-		'photo-gallery'	=> 'Photo Gallery',
-		'video-gallery'	=> 'Video Gallery'
-	),
-	'contact'		=> 'contact us'
+  'home'  => 'Home',
+  'about' => 'About',
+  'Services' => array(
+    'dermaroller' => 'Dermaroller',
+    'chemical-peel' => 'Chemical Peel',
+    'electro-cautery' => 'Electro Cautery',
+    'microdermabrassion' => 'Microdermabrassion',
+    'stemcell-therapy-for-skin' => 'Stemcell Therapy for Skin',
+    'stemcell-therapy-for-hair' => 'Stemcell Therapy for Hair',
+    'platelet-rich-plasma' => 'Platelet Rich Plasma',
+    'ear-lobe-repair' => 'Ear lobe repair',
+    'mole-excision' => 'Mole excision',
+    'wart-removal' => 'Wart Removal',
+    'corn-excision' => 'Corn Excision',
+    'skintag-removal' => 'Skintag removal',
+    'botox' => 'BOTOX',
+    'fillers' => 'FILLERS',
+    'scar-revision' => 'Scar revision',
+    'skin-biopsy' => 'Skin biopsy',
+  ),
+  'Lasers' => array(
+    'fraction-for-acne' => 'Fraction for Acne',
+    'diode-for-hair-removal' => 'Diode for Hair Removal',
+    'ipl-hair-removal' => 'IPL hair removal',
+    'tatoo-removal' => 'Tatoo Removal',
+    ),
+  
+  'gallery' => 'Gallery',
+  'faq' => 'faq',
+  'contact' => 'Contact'
 );
 
-$services = $all_pages['Cancer & Treatment'];
-$service = array_keys($all_pages['Cancer & Treatment']);
-// print_r($service);
+$services = $all_pages['Services'];
+$service = array_keys($all_pages['Services']);
 
-// foreach($otherserv as $k => $v):
-// 	if(is_array($v)):
-// 		unset($otherserv[$k]);
-// 	endif;
-// endforeach;
-// foreach($othserv as $k1 => $v1):
-// 	if(is_array($v1)):
-// 		foreach($v1 as $k2 => $v2):
-// 			return $k2;
-// 		endforeach;
-// 	endif;
-// endforeach;
+$lasers = $all_pages['Lasers'];
+$lasers = array_keys($all_pages['Lasers']);
 
-$all_serv = array();
+$all_keys = array();
+array_walk_recursive($all_pages, function($v, $k) use (&$all_keys) {
+  $all_keys[$k] = $v;
+});
+$all_key = array_keys($all_keys);
+// print_r($all_keys);
 
-foreach($services as $key => $value){
-    if(is_array($value)){
-        $all_serv = array_merge($all_serv, $value);
-    } else {
-        $all_serv[$key] = $value;
-    }
-}
 
-// print_r ($all_serv);
-$sub_serv = array('gi-oncology', 'urology', 'breast', 'gynaec-oncology', 'bone');
-$service_keys = array_keys($all_serv);
-$service_keys = array_merge($service_keys, $sub_serv);
-// print_r($service_keys);
-
-// foreach($service_keys as $serv) {
-// $myfile = fopen('view/'.$serv.'.php', "w") or die("Unable to open file!");
-// $write = 'service page content goes here';
-// fwrite($myfile, $write);
+// foreach($all_keys as $k => $v) {
+// $myfile = fopen('view/'.$k.'.php', "w") or die("Unable to open file!");
 // }
 
 // testimonial data ********************************************
 $testi_path = 'assets/img/testimonial/';
 $testimonial = array(
-	'Tamizh Ram' 		=> 'Thank you so much for the difference you make in the lives of your patients! Your 
-							kindness, sincere caring, and concern make everything better and are a great 
-							encouragement.” “Thank you so very much for taking care of our friend who came to you 
-							with lots of health issues and being so skilled at what you do. Every day of his life 
-							is better because of you and he feels confident after meeting a doctor like you. We 
-							owe all our gratitude for your service!',
-	'Mohammed Ashfaque' => 'Dr. Ayyappan is one of the best surgical oncologist in Chennai. He is not only a good Dr. 
-							but a good human being. He is very patient in explaining the treatment to the family members 
-							and takes extreme care in ensuring patients are very comfortable. 
-							He treated my mother with extreme care and gave her lot of confidence during her most 
-							difficult time. I am ever thankful to his care and treatment which helped my mother come 
-							out of the treatment successfully.',
-	'nithya shivakumar' => 'One of the best doctor i have ever met. so down to earth and explained the treatment 
-							so well  that we were able to understand. My cousin got operated under him and she is 
-							doing extremely well and the follow up is also wonderful. Very very rare to  meet such 
-							good human being.  I would def recommend him for the people who require help.'
+	'Vinees, Mumbai' 		=> 'Hi, my name is Vineesh and I want to share my experience which I went through with ACL
+                  reconstruction on my left knee. I am a football player and I had a small knee injury which I taught
+                  was small at that point of time. Subsequently I realized that I was not able to walk or climb
+                  stairs freely even after couple of months. That is when I contacted Dr Raj Kanna and I had an ACL
+                  reconstruction at Apollo Hospitals under him',
+	'Anand, Chennai' => 'My name is Anand and I have been quite active in my sports life. However for the past two years I
+                        have been severely handicapped because of the injury which I sustained in my left knee.',
+	'Sujatha, Andhra Pradesh' => 'My name is Mrs Sujatha and I was suffering from arthritis of both my knees for more than five
+                          years. I was literally crippled because of my illness. Finally I contacted Dr Rajkanna at Apollo
+                          Hospital, Greams Road, Chennai and I have undergone total knee replacement of both my knees..',
+  'kanagalakshmi, Sri lanka' => 'My name is Mr Rajendran , my wife Mrs Kanagalaxmi was suffering from severe arthritis of both the
+                              knees. We were running from pillar to post to find a permanent solution for her problem.
+                              Unfortunately nothing worked. We even tried alternative medicines like Ayurveda and other native
+                              treatments. But everything failed. That is when we contacted Dr Rajkanna',
+  'Deo Anita, UK' => 'My name is Deo Anita, and I am 55 years old. I had pain in both my knees which were severely
+                    worn-out because of Rheumatoid Arthritis. Walking for even a short distance was so painful and
+                    literally impossible. I used to shed tears every night because of the pain in my knees',
+  'Debanjan Dey, West Bengal' => 'Hope you are well... And also hope you remember me...I am Debanjan... I am well now...I don’t have
+                                any more problems in my leg...lots of thanks to you..'
 );
 
 $testi_slice = array_slice($testimonial, 0, 2);
@@ -138,13 +115,58 @@ $testi_2 = array_slice($testimonial, 2, 2);
 
 
 // youtube 
-$youtube = array(
-	'video-1'	=>	'https://www.youtube.com/watch?v=MH8Qnd5jX6c',
-	'video-2'	=>	'https://www.youtube.com/watch?v=Q2V3N7-dDGM',
-	'video-3'	=>	'https://www.youtube.com/watch?v=ZEeS0eqknXE',
-	'video-4'	=>	'https://www.youtube.com/watch?v=9BUrngIGOCY'
+$youtube_india = array(
+	'qpdQZFI12yc',
+	'j2d0sfuA1J0',
+	'rYYX0iuLgw4',
+	'EeKhp9lWQi0',
+	'KMtV7txOfLU',
+	'aBllU9IzYfc',
+	'3XlRJs4lbP0',
+	'shYGfA45Ivs',
 );
 
+$youtube_srilanka = array(
+  'pTJnzivhcDo',
+  'L5gQSR2JTvo',
+);
+
+$youtube_knee = array(
+	'6zc7XwoSwsw',
+	'5vLTuNLDIHU',
+	'fjkatzfhwcc',
+	'irHG1FpVv3I',
+	'Y9dRIEdzClQ',
+	'9yXihZhIQno',
+	'5L1mu5iVcLM',
+	'rr_c2MaDFQc',
+	'_SBKAlRgWL0',
+	'CLy06nomd9g'
+);
+
+$youtube_pin = array(
+	'slW2cl8Ez6U',
+	'0Pz-iFrwZck',
+	'UHTo1a4w7wU',
+	'Zd_V3tDlrK0',
+	'vu_HLPLzCZQ',
+	'8dohrhtx2Ck',
+);
+
+$youtube_faq = array(
+  'X4TRchpSuR0',
+  'FNT6-DqssvA',
+  'CjfBD5wyTrE',
+  'CkK_XbuPGCE',
+  'fB4HVZAueaw',
+  'iCE5IDbspRY',
+  'xyxtP7tOEW8',
+  'fuoMCqykMbs',
+  'HTWaKhCsv3M',
+  'gnAglk4SZfI',
+  'VvkqrLxLCeo',
+  'HMPLDePd958'
+);
 
 // galler 
 $images = array(

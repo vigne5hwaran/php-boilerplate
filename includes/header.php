@@ -3,23 +3,28 @@
     include_once'includes/slice.php';
 ?>
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <!-- ========== Meta Tags ========== -->
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- ========== Favicon Icon ========== -->
-    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
 
     <!-- SITE TITLE, KEYWORD, DESCRIPTION -->
     <?php
-        $title = $header->slugtokey($pg_key);
-        $title = ($title=='Index') ? 'Home' : $title;
-        $title = ($title=='Faq') ? 'FAQ' : $title;
+        // $title = $header->slugtokey($pg_key);
+        if(in_array($pg_key,$all_key)) {
+          $title = $header->meta_data($pg_key)['title'];
+        } else {
+          $title = "Page not Found";
+        }
+        // $title = ($title=='Index') ? 'Home' : $title;
+        // $title = ($title=='Faq') ? 'FAQ' : $title;
         $key = $header->meta_data($pg_key)['key'];
         $desc = $header->meta_data($pg_key)['desc'];
         $header->meta($title, $key, $desc);
@@ -27,66 +32,57 @@
 
     <?php $header->styles(); ?>
 
-    <!-- ========== Google Fonts ========== -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,500,600,700,800" rel="stylesheet">
-
 </head>
 
 <body>
 
+  <?php $header->preloader(); ?>
 
-    <!-- Start Header Top 
-    ============================================= -->
+  <!-- Start Header Area -->
+  <header class="header-area">
+
     <?php $header->topbar(); ?>
-    <!-- End Header Top -->
 
-    <!-- Header 
-    ============================================= -->
-    <header id="home">
-
-        <!-- Start Navigation -->
-        <nav class="navbar navbar-default attr-border navbar-sticky bootsnav">
-            <div class="container">
-
-                <!-- Start Atribute Navigation -->
-                <div class="attr-nav">
-                    <ul>
-                        <li class="side-menu"><a href="#"><i class="fa fa-bars"></i></a></li>
-                    </ul>
-                </div>
-                <!-- End Atribute Navigation -->
-
-                <!-- Start Header Navigation -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-                        <i class="fa fa-bars"></i>
-                    </button>
-                    <a class="navbar-brand" href="home">
-                        <img src="assets/img/logo-180.png" class="logo" alt="Logo">
-                    </a>
-                </div>
-                <!-- End Header Navigation -->
-
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="navbar-menu">
-                    <ul class="nav navbar-nav navbar-right" data-in="#" data-out="#">
-                        <?php $header->nav($pg_key); ?>
-                    </ul>
-                </div><!-- /.navbar-collapse -->
+  <!-- Start Navbar Area -->
+  <div class="navbar-area">
+      <div class="fovia-responsive-nav">
+        <div class="container">
+          <div class="fovia-responsive-menu">
+            <div class="logo">
+              <a href="home">
+                <img src="assets/img/nav-logo.jpg" alt="logo">
+              </a>
             </div>
+          </div>
+        </div>
+      </div>
 
-        </nav>
-        <!-- End Navigation -->
+      <div class="fovia-nav">
+        <div class="container">
+          <nav class="navbar navbar-expand-md navbar-light">
+            <a class="navbar-brand" href="home">
+              <img src="assets/img/nav-logo.jpg" alt="logo">
+            </a>
 
-    </header>
-    <!-- End Header -->
+            <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                  <?php $header->nav($pg_key); ?>
+              </ul>
+
+              <div class="others-options">
+                <a href="appointment" class="btn btn-primary">Appointment</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!-- End Navbar Area -->
+  </header>
+  <!-- End Header Area -->
 
     <?php
         if($pg_key != 'index' && $pg_key != 'home') {
-            echo '<!-- Start Breadcrumb 
-            ============================================= -->';
             $header->breadcrum($pg_key);
-            echo '<!-- End Breadcrumb -->';
         }
     ?>

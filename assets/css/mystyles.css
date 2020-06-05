@@ -1,0 +1,86 @@
+.long-dropdown {
+  height: 400px;
+  overflow: auto;
+}
+.error {
+  color: #E91E63 !important;
+}
+#reset {
+  padding: 17px 27px 15.5px 25px;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #fff;
+  background-image: none;
+  font-size: 17px;
+  font-weight: 600;
+}
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+select {
+  width: 100%;
+  flex: 1;
+  /* padding: 0 0.5em; */
+  color: #000;
+  cursor: pointer;
+  border-bottom: solid 1px #0000000f !important;
+}
+.success-box {
+  background: #fbfbfb;
+  padding: 35px;
+  box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.1);
+}
+.mx-auto {
+  margin-right: auto!important;
+  margin-left: auto!important;
+}
+.success-box img {
+  margin: 0 auto;
+  width: 190px;
+  display: block;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+.success-box p {
+  font-size: 18px;
+  color: #333;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 20px;
+}
+.success-box p i {
+  color: #28a745;
+}
+.icofont {
+  font-family: 'IcoFont' !important;
+  /* speak: none; */
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+.map-area {
+  padding: 0px 0px 100px 0px;
+}
+
+.services-details-features .inner {
+  margin-left: 30px;
+}
+
+#newsletter .error {
+  color: #333 !important;
+}

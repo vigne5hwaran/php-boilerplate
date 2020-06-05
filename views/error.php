@@ -8,9 +8,8 @@
                         <h1>4<i class="fas fa-sad-tear"></i>4</h1>
                         <h2>Sorry Page Was Not Found!</h2>
                         <p>
-                            Household shameless incommode at no objection behaviour. Especially do at he possession
-                            insensible sympathize boisterous it. Songs he on an widen me event truth. Certain law age
-                            brother sending amongst why covered.
+                          The page you are looking for might have been removed had 
+                          its name changed or is temporarily unavailable.
                         </p>
                         <a class="btn btn-theme border btn-md" href="home">Back To Home</a>
                     </div>
